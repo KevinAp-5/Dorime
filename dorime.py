@@ -11,20 +11,11 @@ letras = {
 }
 
 name = input('Digite seu nome para o lorde dorime: ').strip().lower()
-save_name = name
-lista = []
+newname = [x for x in name]  # Add as letras do nome em uma lista
 
-# Vai adicionar as letras do nome separamente em uma lista
-for letra in name:
-    lista.append(letra)
-name = lista  # apenas pra renomear a lista
+for x in range(0, len(name)):
+    if name[x] != ' ':  # substitui a letra atual pela caractere do dicionario
+        newname[x] = newname[x].replace(name[x], letras[name[x]])
 
-counter = 0
-for letra in name:
-    if letra != ' ':  # vai substituir a letra para o abc dorime
-        name[counter] = name[counter].replace(letra, letras[letra])
-    counter += 1
-
-name = ''.join(name)  # Vai juntar todos os itens da lista em uma string
-print(f'Nome antigo: {save_name}\nNovo nome: {name}')
-
+newname = ''.join(newname)  # Junta todos os intens da lista em uma string
+print(f"Seu nome: {name}\nSeu nome em Dorime: {newname}")
