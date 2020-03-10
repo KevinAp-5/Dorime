@@ -27,4 +27,4 @@ for letra in name:
 
 name = ''.join(name)  # Vai juntar todos os itens da lista em uma string
 print(f'Nome antigo: {save_name}\nNovo nome: {name}')
-print('ITERIMO ADAPARE!')
+
