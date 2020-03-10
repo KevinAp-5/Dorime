@@ -21,12 +21,10 @@ name = lista  # apenas pra renomear a lista
 
 counter = 0
 for letra in name:
-    if letra == ' ':  # Basicamente nao muda nada
-        name[counter] = name[counter].replace(letra, ' ')
-    else:  # Vai substituir a letra do nome pelo valor do abc dorime
+    if letra != ' ':  # vai substituir a letra para o abc dorime
         name[counter] = name[counter].replace(letra, letras[letra])
     counter += 1
 
 name = ''.join(name)  # Vai juntar todos os itens da lista em uma string
-print(f'Nome antigo: {old_name}\nNovo nome: {name}')
+print(f'Nome antigo: {save_name}\nNovo nome: {name}')
 print('ITERIMO ADAPARE!')
