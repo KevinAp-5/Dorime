@@ -17,5 +17,5 @@ for x in range(0, len(name)):
     if name[x] != ' ':  # substitui a letra atual pela caractere do dicionario
         newname[x] = newname[x].replace(name[x], letras[name[x]])
 
-newname = ''.join(newname)  # Junta todos os intens da lista em uma string
+newname = ''.join(newname)  # Junta todos os itens da lista em uma string
 print(f"Seu nome: {name}\nSeu nome em Dorime: {newname}")
