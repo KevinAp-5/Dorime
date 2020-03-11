@@ -10,12 +10,6 @@ letras = {
     'y': 'me', 'z': 'nare'
 }
 
-name = input('Digite seu nome para o lorde dorime: ').strip().lower()
-newname = [x for x in name]  # Add as letras do nome em uma lista
-
-for x in range(0, len(name)):
-    if name[x] != ' ':  # substitui a letra atual pela caractere do dicionario
-        newname[x] = newname[x].replace(name[x], letras[name[x]])
-
-newname = ''.join(newname)  # Junta todos os itens da lista em uma string
-print(f"Seu nome: {name}\nSeu nome em Dorime: {newname}")
+nome = input('Seu nome: ').strip().lower()
+nome_dorime = ''.join([letras.get(x) for x in list(nome)])
+print(f'Seu nome: {nome}\nSeu nome em Dorime: {nome_dorime}')
