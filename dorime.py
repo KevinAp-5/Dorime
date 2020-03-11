@@ -12,4 +12,4 @@ letras = {
 
 nome = input('Seu nome: ').strip().lower()
 nome_dorime = ''.join([letras.get(x) for x in list(nome)])
-print(f'Seu nome: {nome}\nSeu nome em Dorime: {nome_dorime}')
+print(f'Seu nome em Dorime: {nome_dorime}')
