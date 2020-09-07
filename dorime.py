@@ -11,7 +11,12 @@ letras = {
 }
 
 while True:
-    nome = input('Seu nome: ').strip().lower()
+    try:
+       nome = input('Seu nome: ').strip().lower()
+    except KeyboardInterrupt:
+        print('\nVolte sempre!')
+        exit()
     nome_dorime = ''.join([letras.get(x) for x in list(nome)])
     print(f'Seu nome em Dorime: {nome_dorime}')
     print('-' * 50)
+
