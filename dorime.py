@@ -3,7 +3,7 @@ letras = {
     'd': 'in', 'e': 'te', 'f': 'ri',
     'g': 'mo', 'h': 'ada', 'i': 'pa',
     'j': 're', 'k': 'la', 'l': 'ri',
-    'm': 're', 'n': 'la', 'o': 'ti', 
+    'm': 're', 'n': 'la', 'o': 'ti',
     'p': 're', 'q': 'mo', 'r': 'do',
     's': 'ri', 't': 'me', 'u': 'a',
     'v': 'me', 'w': 'ni', 'x': 'o',
@@ -12,11 +12,11 @@ letras = {
 
 while True:
     try:
-       nome = input('Seu nome: ').strip().lower()
+        nome = input('Seu nome: ').strip().lower()
     except KeyboardInterrupt:
         print('\nVolte sempre!')
         exit()
-    nome_dorime = ''.join([letras.get(x) for x in list(nome)])
-    print(f'Seu nome em Dorime: {nome_dorime}')
-    print('-' * 50)
-
+    else:
+        nome_dorime = ''.join([letras.get(x) for x in list(nome)])
+        print(f'Seu nome em Dorime: {nome_dorime}')
+        print('-' * 50)
