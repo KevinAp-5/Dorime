@@ -7,7 +7,7 @@ letras = {
     'p': 're', 'q': 'mo', 'r': 'do',
     's': 'ri', 't': 'me', 'u': 'a',
     'v': 'me', 'w': 'ni', 'x': 'o',
-    'y': 'me', 'z': 'nare'
+    'y': 'me', 'z': 'nare', ' ': ' '
 }
 
 while True:
